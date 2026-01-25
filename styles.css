@@ -242,6 +242,18 @@ h6 {
 }
 
 /* Responsive */
+
+@media (max-width: 991px) {
+  .navbar {
+    background-color: #ffffff !important;
+  }
+
+  .navbar-collapse {
+    background-color: #ffffff;
+    padding: 10px 0;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.2rem;
