@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrthoCare | Advanced Orthopedic Specialists</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./logo.png" alt="Dr Varun Narula Logo" class="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#doctors">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn appointment-btn" href="#appointment">Book Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Advanced Orthopedic Care & Treatment</h1>
+                    <p class="hero-subtitle">Specialized care for bones, joints, and muscles. Our orthopedic specialists
+                        provide comprehensive treatment using the latest medical advancements to restore mobility and
+                        improve quality of life.</p>
+                    <div class="mt-4">
+                        <a href="#appointment" class="btn appointment-btn me-3">Book Appointment</a>
+                        <a href="#services" class="btn btn-outline-primary">Our Services</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Orthopedic doctor with patient" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title">About Dr. Varun Narula Clinic</h2>
+                    <p>With over 15 years of specialized orthopedic experience, Dr. Varun Narula Clinic is dedicated to
+                        providing exceptional care for musculoskeletal conditions. Our team of board-certified
+                        orthopedic surgeons and specialists are committed to helping patients regain mobility and live
+                        pain-free lives.</p>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-user-md text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Expert Surgeons</h5>
+                                    <p>Board-certified orthopedic surgeons with specialized training</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-medkit text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Modern Technology</h5>
+                                    <p>Advanced diagnostic and surgical equipment for precise treatment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-hand-holding-heart text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Personalized Care</h5>
+                                    <p>Customized treatment plans for each patient's unique needs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-calendar-check text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Same-Day Appointments</h5>
+                                    <p>Urgent orthopedic care available when you need it most</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-4 bg-light rounded">
+                        <h4 class="mb-4">Why Choose OrthoCare?</h4>
+                        <div class="mb-3">
+                            <h5><i class="fas fa-check-circle text-success me-2"></i> Comprehensive Orthopedic Services
+                            </h5>
+                            <p>From sports injuries to joint replacements, we provide complete orthopedic care.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h5><i class="fas fa-check-circle text-success me-2"></i> Minimally Invasive Procedures</h5>
+                            <p>Faster recovery times with advanced arthroscopic and endoscopic techniques.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h5><i class="fas fa-check-circle text-success me-2"></i> Multidisciplinary Approach</h5>
+                            <p>Collaboration with physical therapists and pain management specialists.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h5><i class="fas fa-check-circle text-success me-2"></i> Patient-Centered Care</h5>
+                            <p>We listen to your concerns and involve you in every decision about your treatment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-center">Our Orthopedic Services</h2>
+                    <p class="text-muted">We provide comprehensive orthopedic care for a wide range of conditions</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h4>Joint Replacement</h4>
+                        <p>Advanced hip, knee, and shoulder replacement surgeries using the latest implants and
+                            techniques for improved mobility.</p>
+                        <a href="#" class="text-primary text-decoration-none">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-wheelchair"></i>
+                        </div>
+                        <h4>Spine Care</h4>
+                        <p>Diagnosis and treatment of spinal disorders including herniated discs, stenosis, and
+                            scoliosis with surgical and non-surgical options.</p>
+                        <a href="#" class="text-primary text-decoration-none">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h4>Sports Medicine</h4>
+                        <p>Treatment of sports-related injuries including ACL tears, rotator cuff injuries, and
+                            fractures in athletes of all levels.</p>
+                        <a href="#" class="text-primary text-decoration-none">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h4>Hand & Wrist Surgery</h4>
+                        <p>Specialized care for hand and wrist conditions including carpal tunnel syndrome, arthritis,
+                            and traumatic injuries.</p>
+                        <a href="#" class="text-primary text-decoration-none">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-user-injured"></i>
+                        </div>
+                        <h4>Fracture Care</h4>
+                        <p>Comprehensive treatment for simple and complex fractures using casting, bracing, and surgical
+                            fixation techniques.</p>
+                        <a href="#" class="text-primary text-decoration-none">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h4>Pediatric Orthopedics</h4>
+                        <p>Specialized care for children with congenital and developmental orthopedic conditions
+                            affecting bones and joints.</p>
+                        <a href="#" class="text-primary text-decoration-none">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-center">Our Orthopedic Specialists</h2>
+                    <p class="text-muted">Meet our team of board-certified orthopedic surgeons and specialists</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Doctor 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="doctor-card bg-white">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Dr. Sarah Johnson" class="img-fluid doctor-img">
+                        <div class="p-3">
+                            <h5 class="mb-1">Dr. Sarah Johnson</h5>
+                            <p class="text-primary mb-2">Joint Replacement Specialist</p>
+                            <p class="text-muted small">MD, Board Certified Orthopedic Surgeon with 12+ years experience
+                                in joint preservation and replacement.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="doctor-card bg-white">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Dr. Michael Chen" class="img-fluid doctor-img">
+                        <div class="p-3">
+                            <h5 class="mb-1">Dr. Michael Chen</h5>
+                            <p class="text-primary mb-2">Sports Medicine Surgeon</p>
+                            <p class="text-muted small">MD, Fellowship trained in sports medicine. Team physician for
+                                local university athletic programs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="doctor-card bg-white">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Dr. Robert Williams" class="img-fluid doctor-img">
+                        <div class="p-3">
+                            <h5 class="mb-1">Dr. Robert Williams</h5>
+                            <p class="text-primary mb-2">Spine & Back Specialist</p>
+                            <p class="text-muted small">MD, Specializing in minimally invasive spine surgery and
+                                non-surgical back pain management.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="doctor-card bg-white">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Dr. Amanda Rodriguez" class="img-fluid doctor-img">
+                        <div class="p-3">
+                            <h5 class="mb-1">Dr. Amanda Rodriguez</h5>
+                            <p class="text-primary mb-2">Pediatric Orthopedist</p>
+                            <p class="text-muted small">MD, Specializing in childhood orthopedic conditions including
+                                scoliosis and limb deformities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section id="appointment" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5">
+                        <h2 class="section-title text-center">Book an Appointment</h2>
+                        <p class="text-muted">Fill out the form below and our scheduling team will contact you within 24
+                            hours to confirm your appointment</p>
+                    </div>
+
+                    <div class="appointment-form">
+                        <form id="appointmentForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="doctor" class="form-label">Preferred Doctor (Optional)</label>
+                                <select class="form-select" id="doctor">
+                                    <option value="">Any Available Doctor</option>
+                                    <option value="Dr. Sarah Johnson">Dr. Sarah Johnson - Joint Replacement</option>
+                                    <option value="Dr. Michael Chen">Dr. Michael Chen - Sports Medicine</option>
+                                    <option value="Dr. Robert Williams">Dr. Robert Williams - Spine Specialist</option>
+                                    <option value="Dr. Amanda Rodriguez">Dr. Amanda Rodriguez - Pediatric Orthopedics
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="service" class="form-label">Service Required *</label>
+                                <select class="form-select" id="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="Joint Pain Consultation">Joint Pain Consultation</option>
+                                    <option value="Sports Injury">Sports Injury Evaluation</option>
+                                    <option value="Spine/Back Pain">Spine/Back Pain Consultation</option>
+                                    <option value="Fracture Care">Fracture Care Follow-up</option>
+                                    <option value="Post-operative Check">Post-operative Check-up</option>
+                                    <option value="Second Opinion">Second Opinion</option>
+                                </select>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="date" class="form-label">Preferred Date *</label>
+                                    <input type="date" class="form-control" id="date" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="time" class="form-label">Preferred Time *</label>
+                                    <select class="form-select" id="time" required>
+                                        <option value="">Select time</option>
+                                        <option value="9:00 AM">9:00 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="1:00 PM">1:00 PM</option>
+                                        <option value="2:00 PM">2:00 PM</option>
+                                        <option value="3:00 PM">3:00 PM</option>
+                                        <option value="4:00 PM">4:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Additional Details (Optional)</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Please describe your symptoms or concerns"></textarea>
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="terms" required>
+                                <label class="form-check-label" for="terms">
+                                    I agree to the <a href="#" class="text-primary">Terms & Conditions</a> and
+                                    understand my information will be used in accordance with <a href="#"
+                                        class="text-primary">Privacy Policy</a>.
+                                </label>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn appointment-btn btn-lg px-5">Submit Appointment
+                                    Request</button>
+                            </div>
+                        </form>
+
+                        <div id="formMessage" class="mt-3 text-center" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-center">Patient Testimonials</h2>
+                    <p class="text-muted">Hear from our patients about their experiences at Dr. Varun Narula Clinic</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                <i class="fas fa-quote-left text-primary fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">James Wilson</h5>
+                                <p class="text-muted small">Knee Replacement Patient</p>
+                            </div>
+                        </div>
+                        <p>"Dr. Johnson performed my knee replacement surgery and I'm back to hiking 6 months later. The
+                            care I received was exceptional from start to finish."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                <i class="fas fa-quote-left text-primary fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">Maria Garcia</h5>
+                                <p class="text-muted small">Rotator Cuff Surgery</p>
+                            </div>
+                        </div>
+                        <p>"After my rotator cuff injury, I thought I'd never play tennis again. Dr. Chen's minimally
+                            invasive approach had me back on the court in 5 months!"</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                <i class="fas fa-quote-left text-primary fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">Thomas Reed</h5>
+                                <p class="text-muted small">Spinal Stenosis Treatment</p>
+                            </div>
+                        </div>
+                        <p>"Dr. Williams helped me avoid surgery with targeted injections and physical therapy. After
+                            years of back pain, I finally have my life back."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-center">Contact Us</h2>
+                    <p class="text-muted">Get in touch with our Dr. Varun Narula Clinic for appointments or inquiries
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="contact-info">
+                        <div class="d-flex mb-4">
+                            <div class="me-3">
+                                <i class="fas fa-map-marker-alt text-primary fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Our Location</h5>
+                                <p>123 Medical Plaza Drive<br>Suite 450<br>San Francisco, CA 94107</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div class="me-3">
+                                <i class="fas fa-phone text-primary fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Phone Number</h5>
+                                <p>(415) 555-1234<br>Appointment Line: (415) 555-5678</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div class="me-3">
+                                <i class="fas fa-envelope text-primary fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Email Address</h5>
+                                <p>info@orthocareclinic.com<br>appointments@orthocareclinic.com</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <i class="fas fa-clock text-primary fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Clinic Hours</h5>
+                                <p>Mon-Fri: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Emergency Only
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="bg-white p-2 rounded shadow-sm">
+                        <iframe src="https://www.google.com/maps?q=37.7749,-122.4194&z=15&output=embed" width="100%"
+                            height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- About -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Dr. Varun Narula Clinic</h5>
+                    <p class="footer-text mt-3">
+                        Providing advanced orthopedic care with compassion and expertise.
+                        Our mission is to help patients regain mobility and live active,
+                        pain-free lives.
+                    </p>
+
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#doctors">Our Doctors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Joint Replacement</a></li>
+                        <li><a href="#">Spine Care</a></li>
+                        <li><a href="#">Sports Medicine</a></li>
+                        <li><a href="#">Hand Surgery</a></li>
+                        <li><a href="#">Fracture Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@drvarunnarula.com</li>
+                        <li><i class="fas fa-clock"></i> Mon–Sat: 9AM – 6PM</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom text-center mt-5 pt-4">
+                <p class="mb-0">
+                    &copy; 2026 Dr. Varun Narula Clinic. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

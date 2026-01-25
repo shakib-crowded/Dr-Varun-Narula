@@ -1,0 +1,267 @@
+:root {
+  --primary-blue: #1a6bb3;
+  --secondary-blue: #2a93e6;
+  --light-blue: #e8f4fc;
+  --accent-teal: #0ea5a5;
+  --dark-gray: #333;
+  --medium-gray: #666;
+  --light-gray: #f8f9fa;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+/* Navigation */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.navbar-brand span {
+  color: var(--primary-blue);
+}
+
+.nav-link {
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.nav-link:hover {
+  color: var(--primary-blue) !important;
+}
+.logo {
+  height: 60px; /* adjust as needed */
+  width: auto;
+}
+
+.appointment-btn {
+  background-color: var(--accent-teal);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+
+.appointment-btn:hover {
+  background-color: #0d8c8c;
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)),
+    url("https://images.unsplash.com/photo-1516549655669-df659b8abf47?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+}
+
+.hero-title {
+  color: var(--primary-blue);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  color: var(--medium-gray);
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Section Styling */
+.section-title {
+  color: var(--primary-blue);
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: var(--accent-teal);
+  bottom: 0;
+  left: 0;
+}
+
+.section-title.text-center:after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Service Cards */
+.service-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  height: 100%;
+  border: 1px solid #eaeaea;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--light-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.service-icon i {
+  font-size: 30px;
+  color: var(--primary-blue);
+}
+
+/* Doctor Profile */
+.doctor-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 1px solid #eaeaea;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-img {
+  height: 280px;
+  object-fit: cover;
+}
+
+/* Testimonials */
+.testimonial-card {
+  border-left: 4px solid var(--accent-teal);
+  padding-left: 20px;
+  background-color: var(--light-gray);
+  padding: 25px;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Appointment Form */
+.appointment-form {
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.form-control,
+.form-select {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 0.25rem rgba(26, 107, 179, 0.25);
+}
+
+/* Footer */
+.footer {
+  background: #0b2c3d;
+  color: #cfd8dc;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #cfd8dc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #4fc3f7;
+  padding-left: 5px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 12px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #4fc3f7;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #b0bec5;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-section {
+    padding: 80px 0;
+  }
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
