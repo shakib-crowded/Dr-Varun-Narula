@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Dr. Varun Narula Orthopedic Clinic</title>
+
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #006eff;
+            --secondary-blue: #2548e2;
+            --light-blue: #e8f4fc;
+            --accent-teal: #006eff;
+            --dark-gray: #333;
+            --medium-gray: #666;
+            --light-gray: #f8f9fa;
+            --gradient-primary: linear-gradient(135deg, #006eff 0%, #2548e2 100%);
+            --gradient-light: linear-gradient(135deg, #e8f4fc 0%, #f0f9ff 100%);
+            --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        /* About Hero Section */
+        .about-hero {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 160px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+
+        .about-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .breadcrumb-nav {
+            margin-bottom: 30px;
+        }
+
+        .breadcrumb-nav a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .breadcrumb-nav a:hover {
+            color: white;
+        }
+
+        .breadcrumb-nav span {
+            color: white;
+            opacity: 0.9;
+        }
+
+        .breadcrumb-nav i {
+            margin: 0 10px;
+            opacity: 0.6;
+        }
+
+        .hero-title-about {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle-about {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .hero-stats-about {
+            display: flex;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .stat-item-about {
+            text-align: center;
+        }
+
+        .stat-number-about {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-label-about {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Mission Vision Section */
+        .mission-vision-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .section-title-about {
+            color: var(--dark-blue);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title-about::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: var(--accent-teal);
+            bottom: 0;
+            left: 0;
+        }
+
+        .text-center .section-title-about::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-intro {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        .philosophy-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            height: 100%;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .philosophy-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .philosophy-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .philosophy-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--light-blue);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+
+        .philosophy-icon i {
+            font-size: 1.8rem;
+            color: var(--primary-blue);
+        }
+
+        .philosophy-card h4 {
+            color: var(--dark-blue);
+            margin: 0;
+        }
+
+        .mission-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .mission-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .mission-list i {
+            color: var(--accent-teal);
+            margin-right: 10px;
+        }
+
+        .vision-stats {
+            margin-top: 25px;
+        }
+
+        .vision-stat {
+            background: var(--light-blue);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .vision-stat h5 {
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .vision-stat p {
+            font-size: 0.85rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* Doctor Profile Section */
+        .doctor-profile-section {
+            padding: 100px 0;
+            background: var(--light-blue);
+        }
+
+        .doctor-profile-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .profile-image-wrapper {
+            position: relative;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .profile-badge {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            color: var(--dark-blue);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .profile-badge i {
+            color: #ffc107;
+        }
+
+        .profile-info {
+            padding: 30px;
+        }
+
+        .profile-info h3 {
+            color: var(--dark-blue);
+            margin-bottom: 5px;
+        }
+
+        .specialty {
+            color: var(--accent-teal);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .qualifications p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .qualifications i {
+            color: var(--primary-blue);
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        .doctor-bio {
+            padding-left: 40px;
+        }
+
+        .bio-intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .bio-highlights {
+            margin: 30px 0;
+        }
+
+        .bio-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .bio-item i {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .bio-item h5 {
+            color: var(--dark-blue);
+            margin-bottom: 5px;
+        }
+
+        .bio-item p {
+            color: #666;
+            margin: 0;
+        }
+
+        .cta-bio {
+            margin-top: 40px;
+        }
+
+        .btn-primary-modern {
+            background: var(--gradient-primary);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 10px;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(26, 107, 179, 0.3);
+        }
+
+        .btn-primary-modern:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(26, 107, 179, 0.4);
+            color: white;
+        }
+
+        .btn-outline-modern {
+            background: transparent;
+            border: 2px solid var(--primary-blue);
+            padding: 12px 30px;
+            border-radius: 10px;
+            color: var(--primary-blue);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-modern:hover {
+            background: rgba(26, 107, 179, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .values-grid {
+            margin-top: 50px;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 40px 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+
+        .value-icon i {
+            font-size: 2rem;
+            color: var(--primary-blue);
+        }
+
+        .value-card h4 {
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+        }
+
+        .value-card p {
+            color: #666;
+            margin: 0;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            padding: 100px 0;
+            background: var(--light-blue);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: var(--primary-blue);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+            width: 50%;
+            padding: 0 40px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+        }
+
+        .timeline-year {
+            position: absolute;
+            top: -15px;
+            background: var(--primary-blue);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-year {
+            right: -60px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-year {
+            left: -60px;
+        }
+
+        .timeline-content h4 {
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+        }
+
+        .timeline-content p {
+            color: #666;
+            margin: 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-title-about {
+                font-size: 2.8rem;
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 0;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-year,
+            .timeline-item:nth-child(even) .timeline-year {
+                left: -15px;
+                right: auto;
+            }
+
+            .doctor-bio {
+                padding-left: 0;
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-hero {
+                padding: 120px 0 60px;
+            }
+
+            .hero-title-about {
+                font-size: 2.2rem;
+            }
+
+            .hero-stats-about {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .section-title-about {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <!-- Navigation Bar -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+                    <div class="container">
+                        <a class="navbar-brand d-flex align-items-center" href="/">
+                            <img src="./logo.png" alt="Dr Varun Narula Logo" class="logo">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item ms-2">
+                                    <a class="btn appointment-btn" href="/appointment.html">Book Appointment</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <h1 class="hero-title-about">Our Commitment to Orthopedic Excellence</h1>
+                <p class="hero-subtitle-about">For over 15 years, Dr. Varun Narula and his team have been transforming
+                    lives through advanced orthopedic care, combining medical expertise with compassionate
+                    patient-centered treatment.</p>
+
+                <div class="hero-stats-about">
+                    <div class="stat-item-about">
+                        <div class="stat-number-about">15+</div>
+                        <div class="stat-label-about">Years Experience</div>
+                    </div>
+                    <div class="stat-item-about">
+                        <div class="stat-number-about">5000+</div>
+                        <div class="stat-label-about">Successful Surgeries</div>
+                    </div>
+                    <div class="stat-item-about">
+                        <div class="stat-number-about">98%</div>
+                        <div class="stat-label-about">Patient Satisfaction</div>
+                    </div>
+                    <div class="stat-item-about">
+                        <div class="stat-number-about">25+</div>
+                        <div class="stat-label-about">Research Papers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision-section">
+        <div class="container">
+            <div class="row mb-6">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title-about text-center">Our Philosophy & Vision</h2>
+                    <p class="section-intro">We believe in treating the whole person, not just the condition. Our
+                        integrated approach combines medical excellence with genuine care.</p>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="philosophy-card">
+                        <div class="philosophy-header">
+                            <div class="philosophy-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h4>Our Mission</h4>
+                        </div>
+                        <div class="philosophy-body">
+                            <p>To provide world-class orthopedic care that restores function, relieves pain, and
+                                improves quality of life through personalized treatment plans and cutting-edge
+                                technology.</p>
+                            <ul class="mission-list">
+                                <li><i class="fas fa-check"></i> Patient-first approach in all decisions</li>
+                                <li><i class="fas fa-check"></i> Continuous innovation in treatment methods</li>
+                                <li><i class="fas fa-check"></i> Multidisciplinary collaboration</li>
+                                <li><i class="fas fa-check"></i> Evidence-based clinical practice</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="philosophy-card">
+                        <div class="philosophy-header">
+                            <div class="philosophy-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h4>Our Vision</h4>
+                        </div>
+                        <div class="philosophy-body">
+                            <p>To become the region's most trusted orthopedic center, recognized for excellence in
+                                surgical outcomes, patient satisfaction, and innovative research.</p>
+                            <div class="vision-stats">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <div class="vision-stat">
+                                            <h5>2025</h5>
+                                            <p>Center of Excellence Designation</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="vision-stat">
+                                            <h5>95%+</h5>
+                                            <p>Patient Satisfaction Goal</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="vision-stat">
+                                            <h5>10+</h5>
+                                            <p>Research Publications Annually</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="vision-stat">
+                                            <h5>100%</h5>
+                                            <p>Digital Patient Experience</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Profile Section -->
+    <section class="doctor-profile-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="doctor-profile-card">
+                        <div class="profile-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80"
+                                alt="Dr. Varun Narula" class="img-fluid profile-image">
+                            <div class="profile-badge">
+                                <i class="fas fa-award"></i>
+                                <span>Harvard Medical School</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Dr. Varun Narula</h3>
+                            <p class="specialty">Chief Orthopedic Surgeon & Founder</p>
+                            <div class="qualifications">
+                                <p><i class="fas fa-graduation-cap"></i> MD, Harvard Medical School</p>
+                                <p><i class="fas fa-certificate"></i> Board Certified, Orthopedic Surgery</p>
+                                <p><i class="fas fa-stethoscope"></i> Fellowship, Sports Medicine</p>
+                                <p><i class="fas fa-medal"></i> 15+ Years Surgical Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="doctor-bio">
+                        <h2 class="mb-4">Leading with Expertise & Compassion</h2>
+                        <p class="bio-intro">Dr. Varun Narula is a distinguished orthopedic surgeon with over 15 years
+                            of specialized experience. After completing his medical education at Harvard Medical School,
+                            he trained at some of the nation's premier orthopedic centers.</p>
+
+                        <div class="bio-highlights">
+                            <div class="bio-item">
+                                <i class="fas fa-medal"></i>
+                                <div>
+                                    <h5>Pioneering Techniques</h5>
+                                    <p>Developed 3 innovative surgical protocols now used nationally, reducing recovery
+                                        time by 40%</p>
+                                </div>
+                            </div>
+                            <div class="bio-item">
+                                <i class="fas fa-book-medical"></i>
+                                <div>
+                                    <h5>Academic Leadership</h5>
+                                    <p>Published 25+ research papers in peer-reviewed journals and serves on the
+                                        editorial board of two orthopedic journals</p>
+                                </div>
+                            </div>
+                            <div class="bio-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h5>Teaching & Mentorship</h5>
+                                    <p>Regularly mentors medical students and surgical residents, with 5 former fellows
+                                        now leading their own orthopedic departments</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cta-bio mt-4">
+                            <a href="appointment.html" class="btn btn-primary-modern">
+                                <i class="fas fa-calendar me-2"></i>Consult with Dr. Narula
+                            </a>
+                            <a href="#" class="btn btn-outline-modern ms-3">
+                                <i class="fas fa-file-alt me-2"></i>View Full CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title-about text-center">Our Core Values</h2>
+                    <p class="section-intro">These principles guide everything we do, from patient interactions to
+                        surgical decisions.</p>
+                </div>
+            </div>
+
+            <div class="row values-grid g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Clinical Excellence</h4>
+                        <p>Highest standards of medical care through continuous education and adoption of best
+                            practices.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h4>Compassionate Care</h4>
+                        <p>Treating each patient with empathy, respect, and understanding throughout their journey.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Innovation</h4>
+                        <p>Embracing new technologies and techniques to improve patient outcomes and recovery.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Integrity</h4>
+                        <p>Transparent communication, ethical practice, and honest recommendations for every patient.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title-about text-center">Our Journey</h2>
+                    <p class="section-intro">Milestones in our pursuit of orthopedic excellence and patient care
+                        innovation.</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2008</div>
+                        <h4>Clinic Foundation</h4>
+                        <p>Dr. Varun Narula establishes the orthopedic practice with a vision for patient-centered care.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2012</div>
+                        <h4>Robotic Surgery Program</h4>
+                        <p>Introduced robotic-assisted surgery, becoming the first in the region to offer this
+                            technology.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2016</div>
+                        <h4>Research Center Launch</h4>
+                        <p>Established an orthopedic research division focusing on minimally invasive techniques.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2020</div>
+                        <h4>Digital Transformation</h4>
+                        <p>Implemented telemedicine and digital patient portals for enhanced accessibility.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h4>Center of Excellence</h4>
+                        <p>Recognized as a Regional Center of Excellence for Joint Replacement Surgery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Start Your Journey to Better Mobility?</h2>
+            <p class="cta-subtitle">Schedule a consultation with Dr. Narula and experience the difference that expert
+                orthopedic care can make in your life.</p>
+            <div class="mt-4">
+                <a href="appointment.html" class="btn btn-light btn-lg me-3">
+                    <i class="fas fa-calendar-check me-2"></i>Book Appointment
+                </a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-phone me-2"></i>Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- About -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Dr. Varun Narula Clinic</h5>
+                    <p class="footer-text mt-3">
+                        Providing advanced orthopedic care with compassion and expertise.
+                        Our mission is to help patients regain mobility and live active,
+                        pain-free lives.
+                    </p>
+
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Joint Replacement</a></li>
+                        <li><a href="#">Spine Care</a></li>
+                        <li><a href="#">Sports Medicine</a></li>
+                        <li><a href="#">Hand Surgery</a></li>
+                        <li><a href="#">Fracture Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@drvarunnarula.com</li>
+                        <li><i class="fas fa-clock"></i> Mon–Sat: 9AM – 6PM</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom text-center mt-5 pt-4">
+                <p class="mb-0">
+                    &copy; 2026 Dr. Varun Narula Clinic. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Simple animation for timeline items
+        document.addEventListener('DOMContentLoaded', function () {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            timelineItems.forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(item);
+            });
+
+            // Animate value cards on scroll
+            const valueCards = document.querySelectorAll('.value-card');
+
+            const cardObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            valueCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                cardObserver.observe(card);
+            });
+        });
+    </script>
+</body>
+
+</html>

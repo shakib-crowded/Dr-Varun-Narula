@@ -28,12 +28,10 @@ document
       lastName: document.getElementById("lastName").value,
       phone: document.getElementById("phone").value,
       email: document.getElementById("email").value,
-      doctor: document.getElementById("doctor").value || "Any Available Doctor",
       service: document.getElementById("service").value,
       date: document.getElementById("date").value,
       time: document.getElementById("time").value,
       message: document.getElementById("message").value,
-      termsAccepted: document.getElementById("terms").checked,
     };
 
     //  Print data to console

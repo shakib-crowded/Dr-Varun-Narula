@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Dr. Varun Narula Orthopedic Clinic</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #006eff;
+            --secondary-blue: #2548e2;
+            --light-blue: #e8f4fc;
+            --accent-teal: #006eff;
+            --dark-gray: #333;
+            --medium-gray: #666;
+            --light-gray: #f8f9fa;
+            --gradient-primary: linear-gradient(135deg, #006eff 0%, #2548e2 100%);
+            --gradient-light: linear-gradient(135deg, #e8f4fc 0%, #f0f9ff 100%);
+            --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: #f8fafc;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        /* Services Hero Section */
+        .services-hero {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 160px 0 100px;
+            position: relative;
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .services-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+
+        .services-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .breadcrumb-nav {
+            margin-bottom: 30px;
+        }
+
+        .breadcrumb-nav a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .breadcrumb-nav a:hover {
+            color: white;
+        }
+
+        .breadcrumb-nav span {
+            color: white;
+            opacity: 0.9;
+        }
+
+        .breadcrumb-nav i {
+            margin: 0 10px;
+            opacity: 0.6;
+        }
+
+        .hero-title-services {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle-services {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .hero-stats-services {
+            display: flex;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .stat-item-services {
+            text-align: center;
+        }
+
+        .stat-number-services {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-label-services {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Services Overview Section */
+        .overview-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .section-title-services {
+            color: var(--dark-blue);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title-services::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: var(--accent-teal);
+            bottom: 0;
+            left: 0;
+        }
+
+        .text-center .section-title-services::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-intro {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        /* Services Navigation Tabs */
+        .services-nav-tabs {
+            margin-bottom: 50px;
+        }
+
+        .nav-pills-custom {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border: none;
+        }
+
+        .nav-pills-custom .nav-link {
+            padding: 15px 30px;
+            border-radius: 50px;
+            background: white;
+            color: var(--dark-blue);
+            font-weight: 600;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .nav-pills-custom .nav-link:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-medium);
+            border-color: var(--primary-blue);
+        }
+
+        .nav-pills-custom .nav-link.active {
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(26, 107, 179, 0.3);
+        }
+
+        .nav-pills-custom .nav-link i {
+            margin-right: 10px;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            margin-top: 30px;
+        }
+
+        .service-card-modern {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            height: 100%;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .service-card-modern:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .service-card-modern:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: var(--light-blue);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .service-icon-wrapper i {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+        }
+
+        .service-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: var(--accent-teal);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .service-card-modern h4 {
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .service-card-modern p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .service-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .service-features span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .service-features i {
+            color: var(--accent-teal);
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-blue);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .service-link i {
+            margin-left: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-link:hover {
+            color: var(--dark-blue);
+        }
+
+        .service-link:hover i {
+            transform: translateX(5px);
+        }
+
+        /* Specialized Procedures Section */
+        .specialized-section {
+            padding: 100px 0;
+            background: var(--light-blue);
+        }
+
+        .procedure-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+
+        .procedure-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .procedure-image {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .procedure-content {
+            padding: 30px;
+        }
+
+        .procedure-content h4 {
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+        }
+
+        .procedure-content p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .procedure-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .procedure-time {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #666;
+        }
+
+        .procedure-time i {
+            color: var(--accent-teal);
+        }
+
+        .btn-procedure {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-procedure:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(26, 107, 179, 0.3);
+            color: white;
+        }
+
+        /* Treatment Approach Section */
+        .approach-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .approach-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            background: var(--light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 25px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            border: 3px solid white;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .step-content h4 {
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+        }
+
+        .step-content p {
+            color: #666;
+            margin: 0;
+        }
+
+        /* Technology Section */
+        .technology-section {
+            padding: 100px 0;
+            background: var(--light-blue);
+        }
+
+        .tech-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .tech-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+
+        .tech-icon i {
+            font-size: 3rem;
+            color: var(--primary-blue);
+        }
+
+        .tech-card h4 {
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+        }
+
+        .tech-card p {
+            color: #666;
+            margin: 0;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .accordion-custom {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .accordion-item-custom {
+            border: none;
+            border-radius: 15px !important;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .accordion-button-custom {
+            background: white;
+            color: var(--dark-blue);
+            font-weight: 600;
+            padding: 25px 30px;
+            border: none;
+            box-shadow: none;
+        }
+
+        .accordion-button-custom:not(.collapsed) {
+            background: var(--light-blue);
+            color: var(--primary-blue);
+        }
+
+        .accordion-button-custom::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231a6bb3'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+
+        .accordion-body-custom {
+            padding: 25px 30px;
+            background: white;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section-services {
+            padding: 100px 0;
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .btn-light {
+            background: white;
+            color: var(--primary-blue);
+            padding: 15px 40px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-light:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-outline-light {
+            border: 2px solid white;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-light:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-title-services {
+                font-size: 2.8rem;
+            }
+
+            .nav-pills-custom {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-pills-custom .nav-link {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+
+            .services-hero {
+                clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            }
+
+            .cta-section-services {
+                clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-hero {
+                padding: 120px 0 60px;
+            }
+
+            .hero-title-services {
+                font-size: 2.2rem;
+            }
+
+            .hero-stats-services {
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .stat-item-services {
+                flex: 0 0 calc(50% - 20px);
+            }
+
+            .section-title-services {
+                font-size: 2rem;
+            }
+
+            .approach-step {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 20px;
+                align-self: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .stat-item-services {
+                flex: 0 0 100%;
+            }
+
+            .service-features {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .accordion-button-custom,
+            .accordion-body-custom {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="services-hero-content">
+                <!-- Navigation Bar -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+                    <div class="container">
+                        <a class="navbar-brand d-flex align-items-center" href="/">
+                            <img src="./logo.png" alt="Dr Varun Narula Logo" class="logo">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item ms-2">
+                                    <a class="btn appointment-btn" href="/appointment.html">Book Appointment</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <h1 class="hero-title-services">Advanced Orthopedic Solutions</h1>
+                <p class="hero-subtitle-services">Comprehensive orthopedic care using cutting-edge technology and
+                    evidence-based approaches to restore mobility and improve quality of life.</p>
+
+                <div class="hero-stats-services">
+                    <div class="stat-item-services">
+                        <div class="stat-number-services">25+</div>
+                        <div class="stat-label-services">Specialized Services</div>
+                    </div>
+                    <div class="stat-item-services">
+                        <div class="stat-number-services">98%</div>
+                        <div class="stat-label-services">Success Rate</div>
+                    </div>
+                    <div class="stat-item-services">
+                        <div class="stat-number-services">40 min</div>
+                        <div class="stat-label-services">Avg. Consultation</div>
+                    </div>
+                    <div class="stat-item-services">
+                        <div class="stat-number-services">24/7</div>
+                        <div class="stat-label-services">Emergency Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="overview-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title-services text-center">Comprehensive Orthopedic Care</h2>
+                    <p class="section-intro">From diagnosis to rehabilitation, we offer a full spectrum of orthopedic
+                        services tailored to your specific needs and goals.</p>
+                </div>
+            </div>
+
+
+            <!-- Services Tab Content -->
+            <div class="tab-content" id="servicesTabContent">
+                <!-- All Services -->
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    <div class="row services-grid g-4">
+                        <!-- Service 1 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card-modern">
+                                <div class="service-icon-wrapper">
+                                    <i class="fas fa-bone"></i>
+                                    <span class="service-badge">Surgical</span>
+                                </div>
+                                <h4>Joint Replacement</h4>
+                                <p>Advanced hip, knee, and shoulder replacements using robotic-assisted technology for
+                                    precision and faster recovery.</p>
+                                <div class="service-features">
+                                    <span><i class="fas fa-clock"></i> 2-3 hour procedure</span>
+                                    <span><i class="fas fa-calendar"></i> 6-8 week recovery</span>
+                                    <span><i class="fas fa-user-md"></i> Dr. Narula</span>
+                                </div>
+                                <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card-modern">
+                                <div class="service-icon-wrapper">
+                                    <i class="fas fa-spine"></i>
+                                    <span class="service-badge">Surgical</span>
+                                </div>
+                                <h4>Spinal Surgery</h4>
+                                <p>Minimally invasive spine procedures for herniated discs, stenosis, and scoliosis with
+                                    reduced recovery time.</p>
+                                <div class="service-features">
+                                    <span><i class="fas fa-clock"></i> 1-4 hour procedure</span>
+                                    <span><i class="fas fa-calendar"></i> 4-12 week recovery</span>
+                                    <span><i class="fas fa-user-md"></i> Dr. Narula</span>
+                                </div>
+                                <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card-modern">
+                                <div class="service-icon-wrapper">
+                                    <i class="fas fa-running"></i>
+                                    <span class="service-badge">Non-Surgical</span>
+                                </div>
+                                <h4>Sports Medicine</h4>
+                                <p>Comprehensive care for sports injuries including ACL tears, rotator cuff injuries,
+                                    and fractures in athletes.</p>
+                                <div class="service-features">
+                                    <span><i class="fas fa-clock"></i> 45 min consultation</span>
+                                    <span><i class="fas fa-calendar"></i> Custom rehab plan</span>
+                                    <span><i class="fas fa-user-md"></i> Dr. Chen</span>
+                                </div>
+                                <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Service 4 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card-modern">
+                                <div class="service-icon-wrapper">
+                                    <i class="fas fa-hands-helping"></i>
+                                    <span class="service-badge">Surgical</span>
+                                </div>
+                                <h4>Hand & Wrist Surgery</h4>
+                                <p>Specialized procedures for carpal tunnel, arthritis, and traumatic injuries of the
+                                    hand and wrist.</p>
+                                <div class="service-features">
+                                    <span><i class="fas fa-clock"></i> 1-2 hour procedure</span>
+                                    <span><i class="fas fa-calendar"></i> 4-8 week recovery</span>
+                                    <span><i class="fas fa-user-md"></i> Dr. Johnson</span>
+                                </div>
+                                <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Service 5 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card-modern">
+                                <div class="service-icon-wrapper">
+                                    <i class="fas fa-user-injured"></i>
+                                    <span class="service-badge">Non-Surgical</span>
+                                </div>
+                                <h4>Fracture Care</h4>
+                                <p>Advanced casting, bracing, and non-surgical fixation techniques for optimal bone
+                                    healing.</p>
+                                <div class="service-features">
+                                    <span><i class="fas fa-clock"></i> 30 min procedure</span>
+                                    <span><i class="fas fa-calendar"></i> 6-12 week healing</span>
+                                    <span><i class="fas fa-user-md"></i> All Doctors</span>
+                                </div>
+                                <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Service 6 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card-modern">
+                                <div class="service-icon-wrapper">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span class="service-badge">Rehabilitation</span>
+                                </div>
+                                <h4>Physical Therapy</h4>
+                                <p>Customized rehabilitation programs to restore strength, mobility, and function after
+                                    injury or surgery.</p>
+                                <div class="service-features">
+                                    <span><i class="fas fa-clock"></i> 60 min sessions</span>
+                                    <span><i class="fas fa-calendar"></i> 8-24 week program</span>
+                                    <span><i class="fas fa-user-md"></i> Licensed Therapists</span>
+                                </div>
+                                <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Procedures Section -->
+    <section class="specialized-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title-services text-center">Advanced Surgical Procedures</h2>
+                    <p class="section-intro">State-of-the-art surgical techniques performed with precision and care.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="procedure-card">
+                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Robotic Surgery" class="img-fluid procedure-image">
+                        <div class="procedure-content">
+                            <h4>Robotic-Assisted Surgery</h4>
+                            <p>Precision robotic systems for joint replacements with improved accuracy and faster
+                                recovery times.</p>
+                            <div class="procedure-details">
+                                <div class="procedure-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span>90% Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="procedure-card">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Arthroscopic Surgery" class="img-fluid procedure-image">
+                        <div class="procedure-content">
+                            <h4>Arthroscopic Procedures</h4>
+                            <p>Minimally invasive surgery using small incisions and cameras for diagnosis and treatment.
+                            </p>
+                            <div class="procedure-details">
+                                <div class="procedure-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span>1-2 Hour Procedure</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="procedure-card">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Spine Surgery" class="img-fluid procedure-image">
+                        <div class="procedure-content">
+                            <h4>Minimally Invasive Spine</h4>
+                            <p>Advanced techniques for spinal conditions with reduced tissue damage and quicker
+                                recovery.</p>
+                            <div class="procedure-details">
+                                <div class="procedure-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span>70% Faster Recovery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Approach Section -->
+    <section class="approach-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title-services text-center">Our Treatment Approach</h2>
+                    <p class="section-intro">A comprehensive, patient-centered pathway from initial consultation to full
+                        recovery.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="approach-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Comprehensive Evaluation</h4>
+                            <p>Thorough assessment including advanced imaging, physical examination, and medical history
+                                review to develop an accurate diagnosis.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Personalized Treatment Plan</h4>
+                            <p>Customized treatment strategy combining surgical and non-surgical options tailored to
+                                your specific needs and lifestyle goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Advanced Intervention</h4>
+                            <p>State-of-the-art surgical procedures performed by our expert team using the latest
+                                minimally invasive techniques.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Integrated Rehabilitation</h4>
+                            <p>Comprehensive physical therapy and recovery program to restore function, strength, and
+                                mobility.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Long-term Follow-up</h4>
+                            <p>Ongoing monitoring and support to ensure lasting results and address any future concerns.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title-services text-center">Advanced Technology</h2>
+                    <p class="section-intro">We invest in the latest medical technology to ensure the best possible
+                        outcomes for our patients.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>Robotic Surgery</h4>
+                        <p>Precision robotic systems for accurate implant placement and improved surgical outcomes.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <h4>3D Imaging</h4>
+                        <p>Advanced CT and MRI scans for detailed anatomical visualization and surgical planning.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4>Arthroscopy</h4>
+                        <p>High-definition cameras for minimally invasive diagnosis and treatment of joint conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h4>Navigation Systems</h4>
+                        <p>Computer-assisted navigation for precise alignment in complex orthopedic procedures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="cta-section-services">
+        <div class="container">
+            <h2 class="cta-title">Ready to Discuss Your Treatment Options?</h2>
+            <p class="cta-subtitle">Schedule a consultation with our orthopedic specialists to develop a personalized
+                treatment plan.</p>
+            <div class="mt-4">
+                <a href="appointment.html" class="btn btn-light btn-lg me-3">
+                    <i class="fas fa-calendar-check me-2"></i>Book Appointment
+                </a>
+                <a href="tel:+14155551234" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-phone me-2"></i>Call Now: (415) 555-1234
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- About -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Dr. Varun Narula Clinic</h5>
+                    <p class="footer-text mt-3">
+                        Providing advanced orthopedic care with compassion and expertise.
+                        Our mission is to help patients regain mobility and live active,
+                        pain-free lives.
+                    </p>
+
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Joint Replacement</a></li>
+                        <li><a href="#">Spine Care</a></li>
+                        <li><a href="#">Sports Medicine</a></li>
+                        <li><a href="#">Hand Surgery</a></li>
+                        <li><a href="#">Fracture Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@drvarunnarula.com</li>
+                        <li><i class="fas fa-clock"></i> Mon–Sat: 9AM – 6PM</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom text-center mt-5 pt-4">
+                <p class="mb-0">
+                    &copy; 2026 Dr. Varun Narula Clinic. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Tab filtering functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Bootstrap tabs
+            const tabTriggers = document.querySelectorAll('[data-bs-toggle="tab"]');
+
+            // Animate service cards on scroll
+            const serviceCards = document.querySelectorAll('.service-card-modern, .procedure-card, .tech-card');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            serviceCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+
+            // Animate approach steps
+            const approachSteps = document.querySelectorAll('.approach-step');
+
+            const stepObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateX(0)';
+                        }, index * 200);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            approachSteps.forEach(step => {
+                step.style.opacity = '0';
+                step.style.transform = 'translateX(-20px)';
+                step.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                stepObserver.observe(step);
+            });
+
+            // FAQ accordion animation
+            const accordionButtons = document.querySelectorAll('.accordion-button-custom');
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-plus');
+                        icon.classList.toggle('fa-minus');
+                    }
+                });
+            });
+
+            // Add smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.startsWith('#')) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            window.scrollTo({
+                                top: target.offsetTop - 100,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
